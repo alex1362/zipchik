@@ -10,7 +10,7 @@ Requirements: Apple Silicon (arm64) and macOS 14 or later. The interface follows
 
 ## Install
 
-1. Download `Zipchik-0.2.2-arm64.dmg` from [Releases](../../releases).
+1. Download `Zipchik-0.2.2-arm64.dmg` from [Releases](https://github.com/alex1362/zipchik/releases).
 2. Drag Zipchik to `Applications`.
 3. Select an ordinary archive in Finder and press Space for Quick Look. For a password-protected or multi-volume archive, choose **Open With → Zipchik**.
 
