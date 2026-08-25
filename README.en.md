@@ -16,6 +16,8 @@ Requirements: Apple Silicon (arm64) and macOS 14 or later. The interface follows
 
 If macOS blocks this preview build, Control-click the application in Finder and choose **Open**, then confirm. This is caused by the missing notarization; it does not require disabling system protection globally.
 
+Tester checklist: [TESTING.md](TESTING.md).
+
 ## What it does
 
 - Finder Quick Look: lists archive contents, lets you select files, and extracts them to a chosen folder.
