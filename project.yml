@@ -1,0 +1,57 @@
+name: ZIP
+options:
+  minimumXcodeGenVersion: 2.46.0
+  createIntermediateGroups: true
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: 14.0
+    SWIFT_VERSION: 6.0
+    CURRENT_PROJECT_VERSION: 39
+    MARKETING_VERSION: 0.2.2
+    ARCHS: arm64
+    CODE_SIGNING_ALLOWED: NO
+targets:
+  ZIP:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/ZIPApp
+      - path: Resources/en.lproj
+        buildPhase: resources
+      - path: Resources/ru.lproj
+        buildPhase: resources
+      - path: Resources/7-Zip-license.txt
+        buildPhase: resources
+      - path: Resources/libarchive-license.txt
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ru.dedlyosha.ZIP
+        PRODUCT_NAME: ZIP
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+    dependencies:
+      - target: ZIPQuickLook
+        embed: true
+  ZIPQuickLook:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Sources/ZIPQuickLook
+      - path: Resources/en.lproj
+        buildPhase: resources
+      - path: Resources/ru.lproj
+        buildPhase: resources
+      - path: Resources/libarchive-license.txt
+        buildPhase: resources
+      - path: Resources/ZIPQuickLook/Base.lproj/PreviewViewController.xib
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ru.dedlyosha.ZIP.QuickLook
+        PRODUCT_NAME: ZIPQuickLook
+        INFOPLIST_FILE: Resources/ZIPQuickLook/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_ENTITLEMENTS: Resources/ZIPQuickLook/ZIPQuickLook.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: Sources/ZIPQuickLook/ArchiveBridge.h
+        OTHER_LDFLAGS: $(inherited) -larchive

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleIdentifier</key><string>ru.dedlyosha.ZIP</string>
+  <key>CFBundleName</key><string>ZIP</string>
+  <key>CFBundleDisplayName</key><string>Zipchik</string>
+  <key>CFBundleDevelopmentRegion</key><string>en</string>
+  <key>CFBundleExecutable</key><string>ZIP</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+  <key>CFBundleSupportedPlatforms</key><array><string>MacOSX</string></array>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>CFBundleShortVersionString</key><string>0.2.2</string>
+  <key>CFBundleVersion</key><string>39</string>
+  <key>LSUIElement</key><true/>
+  <key>UTExportedTypeDeclarations</key><array>
+    <dict><key>UTTypeIdentifier</key><string>ru.dedlyosha.archive.7z</string><key>UTTypeConformsTo</key><array><string>public.data</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>7z</string></array></dict></dict>
+    <dict><key>UTTypeIdentifier</key><string>ru.dedlyosha.archive.rar</string><key>UTTypeConformsTo</key><array><string>public.data</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>rar</string></array></dict></dict>
+  </array>
+  <key>CFBundleDocumentTypes</key><array>
+  <dict>
+    <key>CFBundleTypeName</key><string>ZIP archive</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>LSItemContentTypes</key><array><string>public.zip-archive</string></array>
+  </dict>
+  <dict>
+    <key>CFBundleTypeName</key><string>7-Zip archive</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>LSItemContentTypes</key><array><string>org.7-zip.7-zip-archive</string></array>
+  </dict>
+  <dict>
+    <key>CFBundleTypeName</key><string>RAR archive</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>LSItemContentTypes</key><array><string>com.rarlab.rar-archive</string></array>
+  </dict>
+  <dict>
+    <key>CFBundleTypeName</key><string>TAR archive</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>LSItemContentTypes</key><array><string>public.tar-archive</string><string>public.gzip-archive</string><string>public.bzip2-archive</string></array>
+  </dict>
+  </array>
+</dict></plist>

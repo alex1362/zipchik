@@ -1,0 +1,7 @@
+Build/
+.build/
+ZIP.xcodeproj/
+AI/
+.DS_Store
+Release/
+*.dmg
