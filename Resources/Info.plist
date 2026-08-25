@@ -11,7 +11,7 @@
   <key>CFBundleSupportedPlatforms</key><array><string>MacOSX</string></array>
   <key>LSMinimumSystemVersion</key><string>14.0</string>
   <key>CFBundleShortVersionString</key><string>0.2.2</string>
-  <key>CFBundleVersion</key><string>39</string>
+  <key>CFBundleVersion</key><string>40</string>
   <key>LSUIElement</key><true/>
   <key>UTExportedTypeDeclarations</key><array>
     <dict><key>UTTypeIdentifier</key><string>ru.dedlyosha.archive.7z</string><key>UTTypeConformsTo</key><array><string>public.data</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>7z</string></array></dict></dict>
